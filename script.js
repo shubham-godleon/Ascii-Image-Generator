@@ -1,3 +1,16 @@
+function displayFileName() {
+    const fileInput = document.getElementById('uploadInput');
+    const fileNameDisplay = document.getElementById('fileNameDisplay');
+
+    // Check if a file is selected
+    if (fileInput.files.length > 0) {
+        const fileName = fileInput.files[0].name;
+        fileNameDisplay.textContent = `Selected File: ${fileName}`;
+    } else {
+        fileNameDisplay.textContent = ''; // Clear display if no file is selected
+    }
+}
+
 async function uploadImage() {
     const fileInput = document.getElementById('uploadInput');
     const asciiArtDisplay = document.getElementById('asciiArtDisplay');
@@ -39,6 +52,9 @@ async function uploadImage() {
         // Clean up
         window.URL.revokeObjectURL(url);
         document.body.removeChild(a);
+
+        const fileNameDisplay = document.getElementById('fileNameDisplay');
+        fileNameDisplay.textContent = '';
 
     } catch (error) {
         console.error('Error:', error);
