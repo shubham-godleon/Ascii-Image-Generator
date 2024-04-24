@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCII Image Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="task">
+        <h1>Image to ASCII Art Converter</h1>
+        </div>
+        <div class="action">
+        <div class="chooseInputFile">
+        <label for="uploadInput">
+            <img src="resources/day-file.png" width="100px" height="100px" alt="chooseFileIcon" id="chooseFileImage">
+            <p>1. Choose your image file</p>
+        </label>
+        <input type="file" accept="image/*" id="uploadInput" hidden/>
+        </div>
+        <div class="uploadButtonDiv">
+        <label for="uploadButton">
+            <img src="resources/day-upload.png" alt="uploadIcon" width="100px" height="100px" id="uploadButtonImage">
+            <p>2. Upload image</p>
+        </label>
+        <button onclick="uploadImage()" id="uploadButton" hidden>Upload Image</button>
+        </div>
+        </div>
+        <div class="result">
+            <h2>You will get your ASCII Art in a text file download.</h2>
+        </div>
+    </div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="https://www.linkedin.com/in/shubham-kumar-83b39a168/" target="_blank" rel="noopener noreferrer">About</a></li>
+            <li><a href="https://shubham-godleon-portfolio.netlify.app/" target="_blank" rel="noopener noreferrer">Portfolio</a></li>
+            <li><a href="mailto:shubhamkumar190699@gmail.com" target="_blank" rel="noopener noreferrer">Contact</a></li>
+        </ul>
+    </nav>
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/go.d.leon/"  target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/shubham-kumar-83b39a168/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/shubham-godleon" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+        </div>
+        <p>Made with ❤️. Copyright &#169; 2024 GodleoN. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
